@@ -39,7 +39,7 @@ body{
 }
 header p{
     color: white;
-    font-size: clamp(0.5rem,1.5vw,3rem);
+    font-size: clamp(0.8rem,1.5vw,3rem);
 }
 header{
    display: flex;
@@ -56,7 +56,7 @@ header{
     transition: .5s;
 }
 header h1{
-    font-size: clamp(2rem, 10vw, 15vw);
+    font-size: clamp(2.8rem, 10vw, 15vw);
 }
 nav{
     display: flex;
@@ -87,7 +87,7 @@ nav ul{
     width: 40%;
 }
 nav ul li{
-     font-size: clamp(0.5rem, 1.5vw, 2rem);
+     font-size: clamp(0.7rem, 1.5vw, 2rem);
     transition: .5s;
 }
 
@@ -327,7 +327,8 @@ justify-content: center;
     justify-content: space-around;
 
     width: 100%;
-   
+
+
     overflow: hidden;
     padding-bottom: -5%;
   padding: 0% 7%;
@@ -342,7 +343,7 @@ align-items: center;
 justify-content: space-around;
 
     width: 45%;
-    height: 100%;
+    height: ;
 
 }
 
@@ -351,13 +352,13 @@ justify-content: space-around;
    padding: 0;
    display: flex;
 
-    font-size: clamp(2.5rem,8.3vw, 10rem);
+    font-size: clamp(3rem,8.3vw, 10rem);
     color: #dfdcd7;
 }
 
 .pageAbout .leftAbout p{
     text-align: justify;
-    font-size: clamp(0.7rem, 1.7vw, 3.5rem);
+    font-size: clamp(1rem, 1.7vw, 3.5rem);
     color: #dfdcd7;
      
 }
@@ -511,7 +512,7 @@ footer .yapping{
     width: 100%;
    
     height: 160vh;
-    font-size: clamp(2.8rem,13vw,40rem);
+    font-size: clamp(4rem,13vw,40rem);
     font-weight: bold;
     color: #e7e2d9;
     padding: 0 7%;
@@ -625,7 +626,7 @@ footer .end .versi p{
 /* HP besar */
 @media (max-width: 430px) {
     .page1{
-        height: 280vh;
+        height: 400vh;
         box-sizing: border-box;
     }
     .profil{
@@ -664,7 +665,7 @@ footer .end .versi p{
     .pageAbout{
         display: flex;
         flex-direction: column;
-        height: 100vh;
+        height: 130vh;
         justify-content: center;
     }
 
