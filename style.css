@@ -1,0 +1,732 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: acorn;
+    
+
+}
+body{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ width: 100%;
+
+  height: auto;
+}
+
+
+#bg {
+  overflow: hidden;
+  position: fixed;
+  inset: 0;
+  background-image: url(img/img3.webp);
+  background-size: cover;
+  background-position: top;
+
+  z-index: -1;
+  transition: filter 0.2s linear; /* biar smooth */
+  
+}
+@font-face {
+    font-family: acorn;
+    src: url(acorn-7.ttf);
+}
+@font-face {
+    font-family: Poppins ;
+    src: url(Poppins/Poppins-Regular.ttf);
+}
+header p{
+    color: white;
+    font-size: clamp(0.5rem,1.5vw,3rem);
+}
+header{
+   display: flex;
+
+   align-items: center;
+   flex-direction: column;
+   justify-content: center;
+   font-family: acorn;
+   background-repeat: no-repeat;
+   background-size: cover;
+   color: #dfdcd7;
+    height: 100vh;
+    width: 100%;
+    transition: .5s;
+}
+header h1{
+    font-size: clamp(2rem, 10vw, 15vw);
+}
+nav{
+    display: flex;
+    position: fixed;
+    align-items: end;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: 9%;
+    z-index: 1000;
+    align-items: center;
+    
+}
+
+.scrolled{
+    background-color: rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(10px);
+border-bottom: 0.3px solid #dfdcd7;
+transition: .5s;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color:#dfdcd7;
+    list-style: none;
+ 
+    width: 40%;
+}
+nav ul li{
+     font-size: clamp(0.5rem, 1.5vw, 2rem);
+    transition: .5s;
+}
+
+nav ul li:nth-child(1):hover{  
+    font-size: 1.5rem;
+position: relative;
+}
+
+
+
+main{
+   
+}
+
+.gambar{
+    width: 50%;
+    justify-content: center;
+    
+}
+.gambar img{
+    max-width: 100%;
+    justify-content: center;
+   
+    
+}
+.profil {
+
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+align-content: center;
+padding: 0% 7%;
+   height: auto;
+   width: 100%;
+   height: 100vh;
+    
+}
+.text{
+    width: 50%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items:end;
+    justify-content: center;
+   align-content: end;
+    
+
+
+
+}
+
+.deskripsi{
+    width:80%;
+   text-align: justify;
+   color:grey;
+    height: auto;
+    font-family: Poppins;
+}
+
+.deskripsi span{
+    color: #dfdcd7;
+}
+
+.about{
+    width: auto;
+    height: auto;
+    font-size: clamp(2rem,7vw,7.5rem);
+    font-family: acorn;
+    color: #dfdcd7;
+   
+}
+
+.page1{
+    height: 700vh;
+      transition: background 0.5s ease; 
+      box-sizing: border-box;
+      width: 100%;
+    overflow: hidden;
+    
+}
+    
+.marquee {
+    white-space: nowrap;
+    display: flex;
+    font-family: acorn;
+  width: 100%;
+  overflow: hidden;
+    
+  color: #dfdcd7;
+}
+.marquee-track {
+  display: flex;
+  will-change: transform;
+  transform: translateZ(0);
+}
+.marquee-track span {
+  flex-shrink: 0;
+  font-size: clamp(2rem, 7vw, 5.5rem);
+}
+
+.item {
+  flex-shrink: 0;
+}
+
+
+.containercard{
+    width:100%;
+    display: flex;
+  padding: 0% 7%;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: space-evenly;  
+    align-content: center; 
+} .containercard .card1 img{
+    width: 200px;
+} .containercard .card2 img{
+    width: 200px;
+} .containercard .card3 img{
+    width: 200px;
+} 
+
+.green{
+    color: lightgreen;
+}
+
+.front{
+    transition: opacity .5s ease;
+    opacity: 1;
+}
+
+.hidden{
+    opacity: 0;
+}
+.teksBaru{
+    transition: .5s;
+}
+
+.pageSkill{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: center;
+    align-content:center;
+    width: 100%;
+    height: 15%;
+  
+ 
+padding: 0% 7%;
+}   
+
+.pageSkill .kiri{
+    display: flex;
+
+    align-items: center;
+justify-content: center;
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    color: #dfdcd7;
+    font-size: clamp(3.5rem,20vw,10rem);
+    font-weight: bold;
+
+
+
+}
+
+.pageSkill .kanan{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 50%;
+}
+
+.pageSkill .kanan .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:27%;
+    background-color: #dfdcd7;
+   text-align: center;
+    height: 4em;
+    transition: .3s;
+    overflow: hidden;
+   font-size: clamp(0.8rem, 1.5vw, 3.5rem);
+    color: black;
+}
+
+.pageSkill .kanan .box:first-child:hover{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:25%;
+    font-size: 20px;
+    
+     height: 50%;
+    background-color: orangered;
+
+
+}
+.pageSkill .kanan .box:nth-child(2):hover{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:25%;
+    font-size: 20px;
+
+     height: 50%;
+    background-color: rgb(2, 110, 146);
+
+
+}
+
+.teksHtml{
+    color: white;
+}
+.pageSkill .kanan .box:nth-child(3):hover{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:25%;
+    font-size: 20px;
+
+     height: 50%;
+    background-color: rgb(248, 211, 4);
+
+
+}
+
+.pageAbout{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    width: 100%;
+   
+    overflow: hidden;
+    padding-bottom: -5%;
+  padding: 0% 7%;
+
+}
+
+.pageAbout .leftAbout{
+
+    display: flex;
+    flex-direction: column;
+align-items: center;
+justify-content: space-around;
+
+    width: 45%;
+    height: 100%;
+
+}
+
+.pageAbout .leftAbout h1{
+   text-align: center;
+   padding: 0;
+   display: flex;
+
+    font-size: clamp(2.5rem,8.3vw, 10rem);
+    color: #dfdcd7;
+}
+
+.pageAbout .leftAbout p{
+    text-align: justify;
+    font-size: clamp(0.7rem, 1.7vw, 3.5rem);
+    color: #dfdcd7;
+     
+}
+
+.pageAbout .rightAbout{
+display: flex;
+justify-content: center;
+align-items: center;
+    width: 40%; 
+ 
+
+}
+.pageAbout .rightAbout img{
+    max-width: 100%;
+}
+.pageProject{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    height: 75%;
+    padding: 0 7%;
+    box-sizing: border-box;
+    overflow: hidden;
+ 
+}
+
+.judulProject{
+    font-size: clamp(3rem, 20vw, 20rem);
+    font-family: acorn;
+    color: #dfdcd7;
+    text-align: center;
+  padding: 10% 0;
+}
+
+.pageProject .row{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    padding: 2% 0;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.pageProject .row img{
+   max-width: 90%;
+    filter: grayscale(100%);
+    transition: .5s;
+}
+
+.pageProject .row img:hover{
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+.experiences{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+   
+}
+ .experiences .leftE{
+    color: #dfdcd7;
+    font-size: clamp(2rem, 7vw, 5.5rem);
+    width: 50%;
+    height: 80%;
+
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+ }
+ .experiences .rightE{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+  
+
+ }
+
+ .rowex1{
+    font-size: clamp(0.8rem, 3.2vw, 3.5rem);
+ }
+.experiences .rowex{
+    color: white;
+    font-family: acorn;
+   
+  width: 100%;
+  height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    align-items: center;
+border-bottom: 0.1px solid #dfdcd7;
+    transition: .5s;
+}
+
+.rowE2{
+     font-size: clamp(0.5rem,2vw,3.5rem);
+}
+.rowE3{
+     font-size: clamp(0.5rem,2vw,3.5rem);
+}
+
+.rowE4{
+     font-size: clamp(0.5rem,2vw,3.5rem);
+}
+ .rowex .crowe{
+        width: 30%;
+display: flex;
+align-items: center;
+        
+    height: 35%;
+    
+}
+
+.experiences .rowex:first-child:hover{
+     background-color: rgba(255, 255, 255, 0.8);
+     color: black;
+    border-radius: 3%;
+    
+}
+.experiences .rowex:nth-child(2):hover{
+    background-color: rgba(255, 255, 255,0.8);
+    border-radius: 3%;
+    color: black;
+    
+}
+.experiences .rowex:nth-child(3):hover{
+    background-color: rgba(255, 255, 255,0.8);
+    border-radius: 3%;
+    color: black;
+    
+}
+.experiences .rowex:nth-child(4):hover{
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 3%;
+    color: black;
+  
+}
+footer h1{
+    color: white;
+}
+
+footer .yapping{
+    width: 100%;
+   
+    height: 160vh;
+    font-size: clamp(2.8rem,13vw,40rem);
+    font-weight: bold;
+    color: #e7e2d9;
+    padding: 0 7%;
+    letter-spacing: -5%;
+    line-height: 0.8;
+    overflow: hidden;
+}
+footer span a{
+    list-style: none;
+    color: white;
+}
+
+footer .end{
+width: 100%;
+height: 20vh;
+box-sizing: border-box;
+overflow: hidden;
+background-color: #e7e2d9;
+display: flex;
+justify-content: center;
+align-content: center;
+}
+
+footer .end .social{
+    width: 50%;
+    height: 100%;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+ 
+ padding: 0 7%;
+ list-style: none;
+ text-decoration: none;
+}
+footer .end .social a{
+     list-style: none;
+     padding: 0 5%;
+ text-decoration: none;
+ font-size: clamp(0.3rem,1.8vw,3rem);
+ color: black;
+}
+
+footer .end .versi{
+    width: 50%;
+    height: 100%;
+    
+    align-content: center;
+    align-items: center;
+    justify-content: end;
+    display: flex;
+ padding: 0 7%;
+  font-size: clamp(0.3rem,1.5vw,3rem);
+}
+
+footer .end .versi p{
+    padding: 0 3%;
+    float: right;
+}
+@media screen and (max-width:1024px){
+    nav{
+        font-size: 1rem;
+    }
+
+    nav ul{
+        width: 70%;
+    }
+    header{
+        display: flex;
+     
+        justify-content: center;
+       
+    }
+
+    header img{
+        width: 50%;
+    }
+
+    header .left .nama p{
+        font-size: 150%;
+       
+        margin: auto;
+
+    }
+    header .left .garis{
+     
+    }
+
+    header .left h1{
+        
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    main .pembungkusA{
+        height: 50vh;
+    }
+
+    main .leftA{
+        width: 130%;
+    }
+
+    main .about h1{
+        font-size: 250%;
+    }
+
+    main .about .garis{
+        height: 3px;
+    }
+}
+
+/* HP besar */
+@media (max-width: 430px) {
+    .page1{
+        height: 280vh;
+        box-sizing: border-box;
+    }
+    .profil{
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        
+        justify-content: space-evenly;
+    }
+    .profil .teks{
+
+    }
+
+    .pageSkill{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    .pageSkill .kiri{
+        justify-content: center;
+        width: 100%;
+        
+        height: 50%;
+    }
+    .pageSkill .kanan{
+        justify-content: center;
+        width: 100%;
+  
+        height: 40%;
+    }
+    .pageSkill .kanan .box{
+        width: 30%;
+        margin: 0 3%;
+    }
+    .pageAbout{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+    }
+
+    .pageAbout .leftAbout{
+        width: 100%;
+    }
+    .pageAbout .rightAbout{
+        width: 100%;
+    }
+    .experiences{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       
+        
+    }
+    .experiences .leftE{
+        justify-content: center;
+
+        width: 100%;
+        height: 30%;
+    }
+
+    .experiences .rightE{
+        width: 100%;
+        display: flex;
+    
+
+   height: 50%;
+   padding: 0 9%;
+    
+    }
+    .profil .text{
+        width: 100%;
+    }
+
+    .pageAbout .leftAbout{
+        height: 30%;
+    }
+.pageAbout .rightAbout img{
+    max-width: 90%;
+    margin-bottom: 30%;
+}
+
+footer .yapping{
+
+     height: 70vh;
+}
+footer .end{
+    height: 10vh;
+}
+}
+
+
+/* HP normal (utama) */
+@media (max-width: 390px) {
+}
+
+/* HP kecil */
+@media (max-width: 360px) {
+}
+
+
+
+
