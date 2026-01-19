@@ -89,11 +89,22 @@ nav ul{
 nav ul li{
      font-size: clamp(0.7rem, 1.5vw, 2rem);
     transition: .5s;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+nav ul li a{
+    display: inline-block;
+    transition: transform 0.2s ease;
+    text-decoration: none;
+    color: #dfdcd7;
+}
+nav ul li:hover{  
+   transform: scale(1.2);
+
 }
 
-nav ul li:nth-child(1):hover{  
-    font-size: 1.5rem;
-position: relative;
+nav ul li a:hover{
+    color: white;
 }
 
 
